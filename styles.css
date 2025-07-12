@@ -68,6 +68,12 @@ li{
   font-family: "Cherry Bomb One";
 }
 
+@media (max-width: 880px){
+  .nav-items li{
+    font-size: 15px;
+  }
+}
+
 .nav-anchor{
   color: white;
   text-decoration: none;

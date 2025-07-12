@@ -1,0 +1,262 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  /* background-color: black; */
+  background-image: url('bg img.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  font-family: Montserrat;
+}
+
+h1{
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+h2{
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+
+#header{
+  /* position: fixed; */
+  top: 0;
+  padding: 2rem;
+  width: 100%;
+  z-index: 1000;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  background: linear-gradient(135deg, #00f7ff, #7c4dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  font-family: "Cherry Bomb One";
+  cursor: pointer;
+}
+
+.nav-items{
+  display: flex;
+}
+
+li{
+  padding: 0 0 0 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  /* font-family: "Montserrat"; */
+  font-family: "Cherry Bomb One";
+}
+
+.nav-anchor{
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.nav-anchor:hover{
+  transform: scale(1.05);
+  /*======= all for gradient hover============ */
+  background: linear-gradient(135deg, #00f7ff, #7c4dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  /* ====== ends here gradient =========== */
+}
+
+/* ========================== intro start =============================== */
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+.name{
+  margin-top: 5rem;
+  font-size: 6rem;
+  font-family: "Dancing Script"
+}
+
+.skill{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-family: Montserrat
+}
+
+
+
+.myphoto{
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin: 4rem 0 4rem;
+}
+
+.myphoto:hover{
+  box-shadow: 0 0 12px rgba(0, 247, 255, 0.5);
+}
+
+/* ===================== ABOUT ME ========================== */
+
+.about{
+  /* background-color: pink; */
+  width: 50%;
+  line-height: 1.4rem;
+  margin-bottom: 8rem;
+}
+
+#skill{
+  scroll-margin-top: 8rem;
+}
+
+.skills{
+  margin-bottom: 3rem;
+}
+
+
+.skill-icons{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 8rem;
+  width: 50vw;
+  margin-bottom: 5rem;
+}
+
+
+.skill-items {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-items i{
+  font-size: 7rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 880px){
+  .skill-items i{
+    font-size: 5rem;
+  }
+}
+
+
+@media (max-width: 600px){
+  .skill-items i{
+    font-size: 3rem;
+  }
+  .skill-items p{
+    font-size: 14px;
+  }
+}
+
+
+
+.skill-items:hover i{
+  transform: scale(1.05);
+/*======= all for gradient hover =========*/
+background: linear-gradient(135deg, #00f7ff, #7c4dff);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+/* ========== ends here gradient ========= */
+}
+
+
+/* ====================== PROJECTS ================================== */
+.projects {
+  text-align: center;
+  padding: 3rem 1rem;
+  width: 50vw;
+  margin-bottom: 9rem;
+  /* background-color: yellow */
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  /* background-color: green */
+}
+
+.project-links a {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #00f7ff, #7c4dff);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 247, 255, 0.4);
+}
+
+.project-links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(124, 77, 255, 0.6);
+}
+
+
+/* ============================= FOOTER ================================== */
+
+.footer{
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.2);
+
+  width: 100%;
+  height: 10rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer p{
+  font-size: 1.7rem;
+  margin-bottom: 1.4rem;
+}
+
+.social-media-icons{
+  color: white;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.social-media-icons:hover{
+  /*======= all for gradient hover =========*/
+  background: linear-gradient(135deg, #00f7ff, #7c4dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* ========== ends here gradient ========= */
+}
+
+.footer-icons{
+  /* background-color: green */
+}
